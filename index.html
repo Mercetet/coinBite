@@ -2,24 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="https://res.cloudinary.com/dkwolhxts/image/upload/v1751321508/LogoBlanco_shzoe5.png" />
+    <link rel="icon" href="/icono.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora precio hora</title>
+    <title>CoinBite</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="container">
-        <img src="precioHora.png" alt="Calculadora">
-      <h1>¿Cuanto vale este producto en tiempo de trabajo?</h1>
+      <div class="header">
+        <img class="icono" src="/icono.png" alt="coinBite" />
+        <h1>¡Chau gastos hormiga!</h1>
+      </div>
+      <h2>Calculá cuanto tiempo te está costando ese "pequeño" gasto...</h2>
       <section>
         <label>¿Cuanto cobras al mes?($):</label>
-        <input type="number" id="sueldo"/>
+        <input type="number" id="sueldo" placeholder="150000" />
         <label>¿Cuantos dias de la semana trabajas?</label>
-        <input type="number" id="dias"/>
-        <label>¿Cuantas horas trabajas por dia?</label>
-        <input type="number" id="horas"/>
-        <label>¿Cuanto vale el producto?</label>
-        <input type="number" id="producto"/>
+        <input type="number" id="dias" placeholder="5" />
+        <label>¿Cuantas horas trabajas por día?</label>
+        <input type="number" id="horas" placeholder="4" />
+        <label
+          >¿Cuanto vale el producto? Ejemplos: Café, snacks, taxi, cigarrillos,
+          etc.</label
+        >
+      <div class="calculadora">
+        <div>
+          <input type="number" id="producto" placeholder="5000" />
+          <label>¿Cuantas veces al mes repetís este gasto?</label>
+          <input type="number" id="repeticion" placeholder="8" />
+        </div>
+        <img class="logo" src="/logo.png" alt="Gasto hormiga" />
+      </div>
       </section>
       <button onclick="calcular()">Calcular</button>
       <div class="resultado">
@@ -27,8 +40,8 @@
       </div>
     </main>
     <footer>
-        <p>Ninguno de los datos ingresados son guardados.</p>
-        <p>El resultado puede no ser 100% exacto.</p>
+      <p>Ninguno de los datos ingresados son guardados.</p>
+      <p>El resultado puede no ser 100% exacto.</p>
     </footer>
     <script src="script.js"></script>
   </body>
